@@ -1,0 +1,4 @@
+name = Sebbon: Base theme overrides
+description = A base setup module for default theme overrides concerning (preprocess) functions for HTML output, pages and nodes, adding theming template suggestions, overriding field output, pagination settings etc. All to do with streamlining the front-end code. Functions overridden: --hook_html_head_alter, --hook_preprocess_html, --hook_breadcrumb, --hook_css_alter, --hook_preprocess_page, --hook_preprocess_node, --hook__preprocess_block, --hook_field, hook_image, --hook_item_list.
+package = Sebbon
+core = 7.x
