@@ -63,3 +63,13 @@ function theme_base_overrides_preprocess_block(&$variables) {
         $variables['content'] = l(t('edit'), 'admin/structure/block/manage/block/' . $block->delta, array('attributes'=>array('class'=>'block_edit', 'title'=>'edit '.$block->subject.' block'), 'query'=>drupal_get_destination())). $variables['content'];
     }
 }
+
+/**
+ * Alter forms
+ */
+function theme_base_overrides_form_alter(&$form, &$form_state, $form_id) {
+    //dpm($form_id);
+    if ($form_id == 'search_block_form') {
+        $form['#attributes']['class'][] = 'search';
+    }
+}
